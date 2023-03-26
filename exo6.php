@@ -9,4 +9,15 @@ $elements = array("Monsieur","Madame","Mademoiselle"); alimenterListeDeroulante(
 
 <?php
 
+    $elements = array("Monsieur","Madame","Mademoiselle");
+
+    function alimenterListeDeroulante($elements){
+        echo "<label><select>";
+        foreach($elements as $value){
+            echo "<option value='".$value."'>".$value."</option>";
+            }
+        echo "</select></label>";
+    }
+
+    alimenterListeDeroulante($elements)
 ?>

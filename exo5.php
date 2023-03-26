@@ -12,7 +12,8 @@ $nomsInput = array("Nom","Prénom","Ville"); afficherInput($nomsInput);</p>
 
     function afficherInput($nomsInput){
         foreach($nomsInput as $value){
-            echo "<div style='background-color:grey;padding:5px;width:200px'><label>".$value."<br><input><br></input></label></div>";
+            echo "<div style='background-color:grey;padding:5px;width:200px'>
+            <label>".$value."<br><input><br></input></label></div>";
         }
     }
 
