@@ -10,12 +10,25 @@ Vous devrez appeler la fonction comme suit : afficherTableHTML($capitales);</p>
 
 <?php
 
-    $capitales = array(
-        "France" => "Paris",
-        "Suisse" => "Bern",
-        "Espagne" => "Madrid",
-        "Pologne" => "Varsovie",
-    )
+$capitales = [
+    "France" => "Paris",
+    "Suisse" => "Bern",
+    "Espagne" => "Madrid",
+    "Pologne" => "Varsovie"
+];
 
+    function afficherTableHTML($capitales){
+        echo "<table><tbody><tr><td>Pays<br>";
+        foreach($capitales as $key => $value){
+            echo "".$key."<br>";
+        }
+        echo "</td><td>Ville<br>";
+        foreach($capitales as $key => $value){
+            echo "".$value."<br>";
+        }
+        echo "</td></tr></tbody></table>";
+    }
 
+    afficherTableHTML($capitales)
 ?>
+

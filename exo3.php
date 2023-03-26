@@ -6,5 +6,8 @@
 <h2>Résultat</h2>
 
 <?php
+$clique = "Clique-ici";
+echo "<a href='https://elan-formation.eu/accueil' target='_blank'>".$clique."</a>";
+
 
 ?>
