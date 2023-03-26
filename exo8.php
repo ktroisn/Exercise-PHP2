@@ -8,5 +8,9 @@ repeterImage($url,4);</p>
 <h2>Résultat</h2>
 
 <?php
-
+    $image = "<img src='http://my.mobirise.com/data/userpic/764.jpg'>";
+    
+    for($i = 1; $i <=4; $i ++){
+        echo $image;
+    }
 ?>
