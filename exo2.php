@@ -18,15 +18,19 @@ $capitales = [
 ];
 
     function afficherTableHTML($capitales){
-        echo "<table><tbody><tr><td>Pays<br>";
-        foreach($capitales as $key => $value){
-            echo "".$key."<br>";
+        ksort($capitales); //Trier le tableau dans l'ordre de A a Z par rapport au key
+        echo "<table style='width:300px;border: 1px solid black;border-collapse:collapse'>
+                <tr>
+                <td style='border: 1px solid black;border-collapse:collapse'><strong> Pays</strong></td>
+                <td style='border: 1px solid black;border-collapse:collapse'><strong> Ville</strong></td>
+                </tr><br>"; //Premier echo permettant de donner la premiere partie du tableau (head)
+        foreach($capitales as $key => $value){ 
+            $key = strtoupper($key); // Mettre les key en majuscule
+            echo "<tr><td style='border: 1px solid black;border-collapse:collapse'> ".$key."<br></td>
+                <td style='border: 1px solid black;border-collapse:collapse'> ".$value."<br></td></tr>"; 
+                //Second eco pour afficher le contenu
         }
-        echo "</td><td>Ville<br>";
-        foreach($capitales as $key => $value){
-            echo "".$value."<br>";
-        }
-        echo "</td></tr></tbody></table>";
+        echo "</table>"; // Echo pour fermer la table (a mettre apres la boucle)
     }
 
     afficherTableHTML($capitales)
