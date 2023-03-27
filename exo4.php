@@ -36,7 +36,7 @@ $capitales = [
                   <td style='border: 1px solid black;border-collapse:collapse'> ".$key."<br></td>
                   <td style='border: 1px solid black;border-collapse:collapse'> ".$value."<br></td>
                   <td style='border: 1px solid black;border-collapse:collapse'>
-                  <a href='https://fr.wikipedia.org/wiki/' target='_blank'>Lien</a><br>
+                  <a href='https://fr.wikipedia.org/wiki/".$value."' target='_blank'>Lien</a><br>
                   </td>
                 </tr>"; 
               //Second eco pour afficher le contenu
