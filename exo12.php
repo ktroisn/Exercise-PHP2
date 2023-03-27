@@ -15,5 +15,9 @@ array(2) { [0]=> string(7) "valeur1" [1]=> string(7) "valeur2" }
 <h2>Résultat</h2>
 
 <?php
-
+   $tableauValeurs = array(true,"texte",10,25.369,array("valeur1","valeur2"));
+   foreach($tableauValeurs as $key => $value){
+      echo "<br>";
+      var_dump($value);
+  }
 ?>
