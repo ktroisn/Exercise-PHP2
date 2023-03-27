@@ -8,4 +8,16 @@ afficherRadio($nomsRadio);</p>
 
 <?php
 
+    $nomsRadio = array("Monsieur", "Madame", "Autre");
+
+    function afficherRadio($nomsRadio) {
+        echo "<form>";
+    foreach($nomsRadio as $value){
+        echo "<div><input type='radio' name='choix'><label>".$value."</label></div><br>";
+    }
+        echo "</form>";
+}
+
+afficherRadio($nomsRadio)
+
 ?>
